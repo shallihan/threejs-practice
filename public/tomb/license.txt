@@ -1,0 +1,11 @@
+Model Information:
+* title:	Megalithic Tomb from "Rügen", Germany
+* source:	https://sketchfab.com/3d-models/megalithic-tomb-from-rugen-germany-c430737b9f9541c5b9667912b52d2b1d
+* author:	Lars Kölbel (https://sketchfab.com/Lars_Koelbel_Germany)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Megalithic Tomb from "Rügen", Germany" (https://sketchfab.com/3d-models/megalithic-tomb-from-rugen-germany-c430737b9f9541c5b9667912b52d2b1d) by Lars Kölbel (https://sketchfab.com/Lars_Koelbel_Germany) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
