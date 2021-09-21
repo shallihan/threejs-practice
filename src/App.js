@@ -103,20 +103,7 @@ export default function App() {
       <Lights />
       <Suspense fallback={null}>
         <Stage controls={controls}>
-          <Texts
-            anchorX="center"
-            anchorY="middle"
-            fontSize={1}
-            lineHeight={1}
-            letterSpacing={-0.02}
-            color={"#000000"}
-            position={[0, 6, 1]}
-            fillOpacity={0}
-            strokeWidth={"2.5%"}
-            strokeColor="#949494"
-          >
-            Portal
-          </Texts>
+          <Texts />
           <MagicMirror position={[0, 2.5, 0]} rotation={[0, 0, 0]}>
             <Lights />
             <Suspense fallback={null}>
