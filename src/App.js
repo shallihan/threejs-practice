@@ -8,11 +8,14 @@ import {
   OrbitControls,
   PerspectiveCamera,
   MeshDistortMaterial,
-  Environment,
 } from "@react-three/drei";
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/three";
 import { Rocks, Rock } from "./Models";
+import Texts from "./Text";
+import Clouds from "./Clouds";
+import Knot from "./Knot";
+
 
 import "./App.css";
 
@@ -100,20 +103,39 @@ export default function App() {
       <Lights />
       <Suspense fallback={null}>
         <Stage controls={controls}>
+          <Texts
+            anchorX="center"
+            anchorY="middle"
+            fontSize={1}
+            lineHeight={1}
+            letterSpacing={-0.02}
+            color={"#000000"}
+            position={[0, 6, 1]}
+            fillOpacity={0}
+            strokeWidth={"2.5%"}
+            strokeColor="#949494"
+          >
+            Portal
+          </Texts>
           <MagicMirror position={[0, 2.5, 0]} rotation={[0, 0, 0]}>
             <Lights />
+            <Suspense fallback={null}>
+              <Clouds />
+              <Rocks
+                scale={0.05}
+                rotation={[5, 4.9, 5]}
+                position={[-1, -2, -10]}
+              />
+            </Suspense>
             <Sky
-              distance={450000}
-              sunPosition={[0, 1, 0]}
-              inclination={0}
-              azimuth={0.25}
-            />
-            <Rocks
-              scale={0.05}
-              rotation={[5, 4.9, 5]}
-              position={[-1, -2, -10]}
+              azimuth={0.5}
+              turbidity={10}
+              rayleigh={0.5}
+              inclination={0.6}
+              distance={100000}
             />
           </MagicMirror>
+          <Knot />
           <Rock scale={5} position={[1.5, 0, 3]} />
           <Sphere />
         </Stage>
